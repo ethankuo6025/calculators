@@ -16,5 +16,5 @@ portfolio_expected_return = portfolio_value.iloc[-1] ** (1 / years) - 1
 
 portfolio_volatility = portfolio_returns.std() * np.sqrt(252)
 
-print(f"Expected CAGR: {portfolio_expected_return}")
+print(f"Historical CAGR: {portfolio_expected_return}")
 print(f"Portfolio Volatility: {portfolio_volatility}")

@@ -6,11 +6,12 @@ import config
 from helpers import calculate_beta
 
 tickers = [
-    "VZ", "DHI", "T"
+    "AB", "DHI", "LNC", "TMDX", "ILMN"
 ]
 benchmark = config.BENCHMARK_LIST
+start = '2023-01-01'
 
-corr_matrix, beta_matrix, vol_matrix = calculate_beta(tickers, benchmark)
+corr_matrix, beta_matrix, vol_matrix = calculate_beta(tickers, benchmark, start)
 
 plt.figure(figsize = (10, 8))
 sns.heatmap(beta_matrix, 

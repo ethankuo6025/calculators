@@ -1,9 +1,9 @@
 from pandas import DataFrame
 from data import get_prices
 
-def calculate_beta(tickers: list[str], benchmark: list[str]) -> tuple[DataFrame, DataFrame, DataFrame]:
+def calculate_beta(tickers: list[str], benchmark: list[str], start: str) -> tuple[DataFrame, DataFrame, DataFrame]:
     """returns 3 dataframes: correlation, beta, and volatility Matrices"""
-    prices = get_prices(tickers + benchmark, start='2023-01-01')
+    prices = get_prices(tickers + benchmark, start=start)
 
     returns = prices.pct_change(fill_method=None)
 

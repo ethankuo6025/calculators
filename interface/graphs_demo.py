@@ -5,8 +5,8 @@ demo of the correlation-matrix plots
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-import config
-from helpers import calculate_beta, calculate_factor_covariance
+from src import config
+from src.helpers import calculate_beta, calculate_factor_covariance
 
 # examples
 tickers = ["AAPL", "MSFT", "GOOG", "AMZN", "META", "NVDA", "JPM", "V",

@@ -3,8 +3,8 @@ demo of the beta/corr/vol screener
 """
 
 import pandas as pd
-import config
-from helpers import calculate_beta
+from src import config
+from src.helpers import calculate_beta
 
 # examples
 tickers = ["AAPL", "MSFT", "GOOG", "AMZN", "META", "NVDA", "JPM", "V",

@@ -1,6 +1,6 @@
 import numpy as np
 from pandas import DataFrame, Series
-from data import get_prices
+from src.data import get_prices
 
 def _get_returns(tickers: list[str], benchmark: list[str] | str, start: str) -> tuple[DataFrame, list[str], list[str]]:
     """returns daily returns alongside the ticker/benchmark lists with invalid names dropped"""

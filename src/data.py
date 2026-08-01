@@ -5,8 +5,10 @@ from sqlite3 import Connection
 
 import pandas as pd
 import yfinance as yf
+from dotenv import load_dotenv
 
-DB_PATH = "prices.db"
+load_dotenv()
+DB_PATH = os.getenv("DB_PATH", "prices.db")
 
 def _connect() -> Connection:
     conn = sqlite3.connect(DB_PATH)

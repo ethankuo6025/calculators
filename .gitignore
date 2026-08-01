@@ -2,7 +2,5 @@ prices.db
 __pycache__
 __pycache__/*
 portfolio_tracker/*
-beta.py
-tester.ipynb
-graphs.py
-screener.py
+personal/*
+.env
